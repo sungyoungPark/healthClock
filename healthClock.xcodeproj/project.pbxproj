@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B1F83502764F2240065DD81 /* DayCourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1F834F2764F2240065DD81 /* DayCourseModel.swift */; };
 		5B81D8C127649D9400486C03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81D8C027649D9400486C03 /* AppDelegate.swift */; };
 		5B81D8C527649D9400486C03 /* RoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81D8C427649D9400486C03 /* RoutineViewController.swift */; };
 		5B81D8CA27649D9700486C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B81D8C927649D9700486C03 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B1F834F2764F2240065DD81 /* DayCourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCourseModel.swift; sourceTree = "<group>"; };
 		5B81D8BD27649D9400486C03 /* healthClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = healthClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B81D8C027649D9400486C03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B81D8C427649D9400486C03 /* RoutineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B1F834E2764F2120065DD81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B1F834F2764F2240065DD81 /* DayCourseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5B81D8B427649D9400486C03 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				5B81D8C027649D9400486C03 /* AppDelegate.swift */,
+				5B1F834E2764F2120065DD81 /* Model */,
 				5B81D8D72764B01D00486C03 /* View Model */,
 				5B81D8D42764AF2200486C03 /* View */,
 				5B81D8C927649D9700486C03 /* Assets.xcassets */,
@@ -221,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B1F83502764F2240065DD81 /* DayCourseModel.swift in Sources */,
 				5B81D8D62764AF4F00486C03 /* DayRoutineViewCell.swift in Sources */,
 				5B81D8C527649D9400486C03 /* RoutineViewController.swift in Sources */,
 				5B81D8C127649D9400486C03 /* AppDelegate.swift in Sources */,

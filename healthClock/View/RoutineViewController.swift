@@ -12,10 +12,16 @@ class RoutineViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     var viewModel = RoutineViewModel()
     
-    let tableView : UITableView = {
-        let tableView = UITableView()
+    lazy var tableView : UITableView = {
+        let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.backgroundColor = .white
         return tableView
+    }()
+    
+    lazy var addButton : UIButton = {
+        let button = UIButton(type: .custom)
+        button.setImage(UIImage(systemName: "plus.circle.fill"), for: .normal)
+        return button
     }()
     
     override func viewDidLoad() {
@@ -32,6 +38,10 @@ class RoutineViewController: UIViewController, UITableViewDelegate, UITableViewD
     func setUI(){
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.topItem?.title = "Routine"
+     
+        
+        let barButton = UIBarButtonItem(customView: addButton)
+        self.navigationItem.rightBarButtonItem = barButton
         
         view.addSubview(tableView)
         tableView.snp.makeConstraints { (maker) in
@@ -46,7 +56,7 @@ class RoutineViewController: UIViewController, UITableViewDelegate, UITableViewD
 
 extension RoutineViewController {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 21
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
