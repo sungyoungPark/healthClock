@@ -12,6 +12,7 @@
 		5B81D8CA27649D9700486C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B81D8C927649D9700486C03 /* Assets.xcassets */; };
 		5B81D8CD27649D9700486C03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B81D8CB27649D9700486C03 /* LaunchScreen.storyboard */; };
 		5B81D8D62764AF4F00486C03 /* DayRoutineViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81D8D52764AF4F00486C03 /* DayRoutineViewCell.swift */; };
+		5B81D8D92764B04B00486C03 /* RoutineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81D8D82764B04B00486C03 /* RoutineViewModel.swift */; };
 		D62A46CA78D2C4B35D1587FB /* Pods_healthClock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7ADAD764F0A36C0B95BCC6 /* Pods_healthClock.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		5B81D8CC27649D9700486C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B81D8CE27649D9700486C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B81D8D52764AF4F00486C03 /* DayRoutineViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRoutineViewCell.swift; sourceTree = "<group>"; };
+		5B81D8D82764B04B00486C03 /* RoutineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineViewModel.swift; sourceTree = "<group>"; };
 		63ACEAD5AF51690652212D48 /* Pods-healthClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthClock.release.xcconfig"; path = "Target Support Files/Pods-healthClock/Pods-healthClock.release.xcconfig"; sourceTree = "<group>"; };
 		7DC5693CC73261756AF30309 /* Pods-healthClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthClock.debug.xcconfig"; path = "Target Support Files/Pods-healthClock/Pods-healthClock.debug.xcconfig"; sourceTree = "<group>"; };
 		EA7ADAD764F0A36C0B95BCC6 /* Pods_healthClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_healthClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				5B81D8C027649D9400486C03 /* AppDelegate.swift */,
+				5B81D8D72764B01D00486C03 /* View Model */,
 				5B81D8D42764AF2200486C03 /* View */,
 				5B81D8C927649D9700486C03 /* Assets.xcassets */,
 				5B81D8CB27649D9700486C03 /* LaunchScreen.storyboard */,
@@ -77,6 +80,14 @@
 				5B81D8D52764AF4F00486C03 /* DayRoutineViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5B81D8D72764B01D00486C03 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B81D8D82764B04B00486C03 /* RoutineViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 		851513744E5F81B102811FB7 /* Pods */ = {
@@ -213,6 +224,7 @@
 				5B81D8D62764AF4F00486C03 /* DayRoutineViewCell.swift in Sources */,
 				5B81D8C527649D9400486C03 /* RoutineViewController.swift in Sources */,
 				5B81D8C127649D9400486C03 /* AppDelegate.swift in Sources */,
+				5B81D8D92764B04B00486C03 /* RoutineViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,8 @@ import SnapKit
 
 class RoutineViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var viewModel = RoutineViewModel()
+    
     let tableView : UITableView = {
         let tableView = UITableView()
         tableView.backgroundColor = .white
